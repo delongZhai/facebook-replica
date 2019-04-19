@@ -1,0 +1,65 @@
+/* 
+    StyleSheet for Facebook
+*/
+h1 {
+    margin: 0;
+    font-size: 30pt; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.login{
+    position: absolute;
+    top: 30px;
+    left: 680px;
+}
+
+
+.div1{
+    position: relative;
+    bottom: 20pt;
+    font-size: 35pt;
+    font-weight: bold;
+}
+.div2{
+    position: relative;
+    bottom: 10pt;
+    font-size: 18pt;
+}
+
+.div3{
+    font-size: 25pt;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    left: 80px;    
+}
+body{
+    background-color: #dfe3ee;
+}
+
+.facebook{
+    margin: 0;
+    padding: 20px;
+    background-color: #3b5998;
+}
+#white{
+    color: white;
+}
+.form{
+    position: relative;
+    float: right;
+    width: 550px;
+}
+
+.textbox{
+    font-size:18pt;
+    width:200px;
+}
+
+#wid{
+    width: 410px;
+}
