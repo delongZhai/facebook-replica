@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form action="home.php" method="POST" target="_blank">
+	<form action="signin.php" method="POST" target="_blank">
 		<div class="login"> 
 			<span class="emailLogin">Email</span> 
 			<input type="text" name="user" >
@@ -35,22 +35,21 @@
 			<strong>Find more</strong> of what you're looking for with Facebook Search. 
 		</p>
 
-	<form class="form" action="new_user.php" method="POST" target="_blank">
-		
+	<form name="signup" class="form" action="new_user.php" id="newuser" method="POST" target="_blank">
 	<div class="div1">Sign Up</div>
 	<div class="div2">It’s free and always will be. </div>
 
-		<p>
+	<p>
 			<input type="text" class="textbox" name="first_name" placeholder="First name">
 			<input type="text" class="textbox" name="last_name" placeholder="Last name">
-		</p>
-		<p> <input type="text" class="textbox" id="wid" name="email" placeholder="Email"></p>
-		<p> <input type="password" class="textbox" id="wid1" name="pass" placeholder="New password"></p>
+	</p>
+	<p> <input type="text" class="textbox" id="wid" name="email" placeholder="Email"></p>
+	<p> <input type="password" class="textbox" id="wid1" name="pass" placeholder="New password"></p>
 
-		<div>Birthday</div>
-		<input type="date" name="bday">
-		<br/>
-		
+	<div>Birthday</div>
+			<input type="date" name="bday">
+	<br/>
+	
 		<input type="radio" name="sex" value="female"> Female
 		<input type="radio" name="sex" value="male"> Male
 		<br/>
@@ -58,8 +57,7 @@
 		By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time. 
 		</p>
   	<button class= "sub" type="submit">Sign Up</button>
-		</form>
-
+	</form>
 </body>
 
 </html>
