@@ -1,0 +1,100 @@
+/* 
+    StyleSheet for Facebook
+*/
+h1 {
+    margin: 0;
+    font-size: 30pt; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.login{
+    position: absolute;
+    top: 30px;
+    left: 680px;
+}
+
+.div1{
+    position: relative;
+    bottom: 20pt;
+    font-size: 35pt;
+    font-weight: bold;
+}
+.div2{
+    position: relative;
+    bottom: 10pt;
+    font-size: 18pt;
+}
+
+.div3{
+    font-size: 25pt;
+    font-weight: bold;
+    position: relative;
+    top: 90px;
+    left: 80px;    
+}
+
+#info1{
+    position: absolute;
+    top: 300px;
+    left: 75px;
+}
+#info2{
+    position: absolute;
+    top: 350px;
+    left: 75px;
+}
+#info3{
+    position: absolute;
+    top: 400px;
+    left: 75px;
+}
+.div4{
+    position: relative;
+    top: 100px;
+    left: 80px;  
+}
+body{
+    background-color: #dfe3ee;
+}
+
+.facebook{
+    margin: 0;
+    padding: 20px;
+    background-color: #3b5998;
+}
+#white{
+    color: white;
+}
+.form{
+    position: relative;
+    float: right;
+    width: 550px;
+}
+
+.textbox{
+    font-size:18pt;
+    width:203px;
+}
+
+#wid{
+    width: 410px;
+}
+#wid1{
+    width: 410px;
+}
+
+.sub{
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.terms{
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+}
