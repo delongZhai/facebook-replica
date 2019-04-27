@@ -17,7 +17,6 @@ html, body {
     left: 680px;
 }
 
-
 .div1{
     position: relative;
     bottom: 20pt;
@@ -34,8 +33,29 @@ html, body {
     font-size: 25pt;
     font-weight: bold;
     position: relative;
-    top: 100px;
+    top: 90px;
     left: 80px;    
+}
+
+#info1{
+    position: absolute;
+    top: 300px;
+    left: 75px;
+}
+#info2{
+    position: absolute;
+    top: 350px;
+    left: 75px;
+}
+#info3{
+    position: absolute;
+    top: 400px;
+    left: 75px;
+}
+.div4{
+    position: relative;
+    top: 100px;
+    left: 80px;  
 }
 body{
     background-color: #dfe3ee;
@@ -57,9 +77,24 @@ body{
 
 .textbox{
     font-size:18pt;
-    width:200px;
+    width:203px;
 }
 
 #wid{
     width: 410px;
+}
+#wid1{
+    width: 410px;
+}
+
+.sub{
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.terms{
+    color: #777;
+    font-size: 11px;
+    width: 316px;
 }
