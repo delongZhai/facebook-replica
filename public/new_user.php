@@ -28,8 +28,20 @@
             $p = $_POST['pass'];
         }
 
+        if(empty($_POST['bday'])){
+            $errors[]="You forgot to enter your birthday";
+        }else{
+            $bday = $_POST['bday'];
+        }
+
+        if(empty($_POST['sex'])){
+            $errors[]="You forgot to pick a gender";
+        }else{
+            $gender = $_POST['sex'];
+        }
+
         if(empty($errors)){
-            $query = "INSERT INTO users (first_name,last_name,email, password,birthday) VALUES('$fn','$ln','$e',SHA1('$p'), NOW())";
+            $query = "INSERT INTO users (first_name,last_name,email, password,birthday,gender) VALUES('$fn','$ln','$e',SHA1('$p'), '$bday','$gender')";
     
             $run = mysqli_query($dbc,$query);
     		if($run){
@@ -48,4 +60,5 @@
     
         mysqli_close($dbc);
     }
+    include('footer.php');
 ?>
