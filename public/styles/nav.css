@@ -1,0 +1,213 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #E9EBEE;
+}
+
+
+.navbar{
+    background: #4267b2;
+    position: relative;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 1.5rem;
+}
+
+.col-5{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.createPost hr{
+    width: 95%;
+}
+
+.col-7{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.col-7 h6{
+    margin: 0.5rem 0rem;
+    padding-left: 5px;
+}
+
+textarea{
+    border: none;
+    width: 100%;
+    height: 90px;
+    padding-left: 15px;
+}
+
+textarea::placeholder{
+    color: gray;
+}
+
+form button {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 5px;
+    margin-bottom: 20px;
+}
+
+textarea:focus{
+    border: none;
+    width: 100%;
+    height: 90px;
+    outline: none;
+    size: 
+}
+
+.title{
+    padding: 15px 15px;
+}
+
+.intro h3, .friends h3, .createPost h3{
+    display: inline;
+    font-size: 1.2rem
+}
+
+.bio, .perInfo, .instruct{
+    text-align: center;
+    padding: 18px 0px;
+}
+
+.bio p, .perInfo p, .instruct p{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.bio i, .perInfo i{
+    font-size: 1.8rem;
+    padding: 8px 0px;
+}
+
+.intro hr{
+    width: 90%;
+}
+
+.bio a, .perInfo a{
+    color: black;
+}
+
+
+.fa-globe-americas{
+    background: #4267B2;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.fa-pen{
+    background: #000000;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.fa-user{
+    background: #d41152;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.fa-facebook-square, a {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.fa-facebook-square {
+    font-size: 1.75rem;
+    vertical-align: center;
+    padding: 0px 10px;
+    margin-inline-end: 6px;
+}
+
+.navbar-nav{
+    padding-left: 50px;
+}
+
+form button{
+    background: none;
+    border: none;
+}
+
+.dropdown{
+    text-align: right;
+}
+
+.dropdown-menu{
+    font-size: 0.8rem;
+    border-radius: 0;
+}
+
+.dropdown-item{
+    padding: .25rem 0rem;
+}
+
+.dropdown-item:hover{
+    background: #4267B2;
+    color: #FBFBFD;
+}
+
+.show a{
+    color: black;
+}
+
+.fa-search{
+    color: #ffffff;
+}
+
+input[type="search"]{
+    height: 23px;
+    width: 300px;
+    border-radius: 0;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+}
+
+input[type="search"]:focus{
+    height: 23px;
+    border-radius: 0;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="search"]::placeholder{
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
+
+.dropdown-menu .dropdown-item{
+    text-align: center;
+}
+
+.box{
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}

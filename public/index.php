@@ -23,15 +23,15 @@
 	<div class="div3">world around you on Facebook. </div>
 
 		<p id="info1">
-			<img src="Images/logo1.png" alt="Logo1" title="Logo1" width="50"/>
+			<img src="../Images/logo1.png" alt="Logo1" title="Logo1" width="50"/>
 			<strong>See photos and updates</strong> from friends in News Feed. 
 		</p>
 		<p id="info2">
-			<img src="Images/logo2.png" alt="Logo2" title="Logo2" width="50"/>
+			<img src="../Images/logo2.png" alt="Logo2" title="Logo2" width="50"/>
 			<strong>Share what's new</strong> in your life on your Timeline. 
 		</p>
 		<p id="info3">
-			<img src="Images/logo3.png" alt="Logo3" title="Logo3" width="50"/>
+			<img src="../Images/logo3.png" alt="Logo3" title="Logo3" width="50"/>
 			<strong>Find more</strong> of what you're looking for with Facebook Search. 
 		</p>
 
