@@ -84,8 +84,12 @@ textarea:focus{
 }
 
 .bio i, .perInfo i{
-    font-size: 1.8rem;
     margin: 8px 0px;
+}
+
+.bio i{
+    font-size: 1.8rem;
+
 }
 
 .intro hr{

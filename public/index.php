@@ -2,17 +2,33 @@
 <html lang="en"> 
 
 <head>
+		<!-- adding bootstrap stylesheet and js files -->
     <title>Facebook -Log In or Sign Up</title>
-		<h1 id="white" class="facebook">facebook</h1>
+		<h1 id="white" class="facebook"><span class="title">facebook</span></h1>
+
+    <!-- adding bootstrap stylesheet and js files -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- When the user clicks submit an alert will pop up -->
+		<script>
+			$(document).ready(function(){
+  			elem.onclick = function() {
+    		alert('Thank you for signing up. If there are no errors you will be registed. If there are errors they will display on the next page.');
+  			};
+			});
+		</script>
+
 </head>
 
 <body>
-	<form action="signin.php" method="POST" target="_blank">
+    <!-- Form for signing in -->
+		<form action="home.php" method="POST" target="_blank">
 		<div class="login"> 
 			<span class="emailLogin">Email</span> 
-			<input type="text" name="user" >
+			<input type="email" name="user" >
 			<span class="passwordLogin">Password </span>
 			<input type="password" name="pass" >
 			<button type="submit">Log In</button>
@@ -35,6 +51,7 @@
 			<strong>Find more</strong> of what you're looking for with Facebook Search. 
 		</p>
 
+	<!-- Form for signing up -->
 	<form name="signup" class="form" action="new_user.php" id="newuser" method="POST" target="_blank">
 	<div class="div1">Sign Up</div>
 	<div class="div2">It’s free and always will be. </div>
@@ -43,7 +60,7 @@
 			<input type="text" class="textbox" name="first_name" placeholder="First name">
 			<input type="text" class="textbox" name="last_name" placeholder="Last name">
 	</p>
-	<p> <input type="text" class="textbox" id="wid" name="email" placeholder="Email"></p>
+	<p> <input type="email" class="textbox" id="wid" name="email" placeholder="Email"></p>
 	<p> <input type="password" class="textbox" id="wid1" name="pass" placeholder="New password"></p>
 
 	<div>Birthday</div>
@@ -56,7 +73,7 @@
 		<p class="terms">
 		By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time. 
 		</p>
-  	<button class= "sub" type="submit">Sign Up</button>
+  	<button class= "sub" id="elem" type="submit">Sign Up</button>
 	</form>
 </body>
 

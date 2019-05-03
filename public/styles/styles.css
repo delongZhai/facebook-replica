@@ -1,5 +1,5 @@
 /* 
-    StyleSheet for Facebook
+    StyleSheet for Facebook SignUp and Login page
 */
 h1 {
     margin: 0;
@@ -11,6 +11,12 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
+
+.title{
+    position: relative;
+    left: 60px;
+}
+
 .login{
     position: absolute;
     top: 30px;
