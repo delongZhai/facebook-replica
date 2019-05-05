@@ -37,6 +37,15 @@ CREATE TABLE `users` (
   `birthday` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `user_info` (
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `bio` VARCHAR(80) NULL,
+  `education` VARCHAR(50) NULL,
+  `current_city` VARCHAR(25) NULL,
+  `hometown` VARCHAR(50) NULL,
+  FOREIGN KEY (`user_id`) REFERENCES users(`user_id`)
+)
+
 --
 -- Dumping data for table `users`
 --

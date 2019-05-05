@@ -13,26 +13,71 @@ body{
     position: relative;
     width: 100%;
     height: 42px;
-    margin-bottom: 1.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
-.col-5{
+.background-image{
+    background-image: url("../images/facebook_initial.jpg");
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.col-12{
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.col-12>div{
+    margin: 0 15px;
+    background-color: #ffffff;
+}
+
+.col-12 h2{
+    display: inline;
+    padding: 0 20px;
+}
+
+.col-12 .btn-sm{
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+}
+
+.col-lg-5{
     display: flex;
     flex-direction: column;
     float: left;
+    position: sticky;
+    top: 0;
 }
 
 .createPost hr{
     width: 95%;
 }
 
-.col-7{
+.createPost form button {
+    float: right;
+    margin: 8px 15px;
+}
+
+#fade_caption {
+    color: #d41152;
+    font-size: 0.75rem;
+    margin:  5px 25px;
+}
+
+.col-lg-7{
     display: flex;
     flex-direction: column;
     float: right;
 }
 
-.col-7 h6{
+.col-lg-7 h6{
     margin: 0.5rem 0rem;
     padding-left: 5px;
 }
@@ -46,14 +91,6 @@ textarea{
 
 textarea::placeholder{
     color: gray;
-}
-
-form button {
-    float: right;
-    position: relative;
-    right: 20px;
-    top: 5px;
-    margin-bottom: 20px;
 }
 
 textarea:focus{
@@ -148,12 +185,32 @@ form button{
 }
 
 .dropdown{
-    text-align: right;
+    display: inline;
 }
 
-.dropdown-menu{
+.nav-item .dropdown{
+    position: relative;
+    top: 0;
+}
+
+div.profile-menu{
     font-size: 0.8rem;
     border-radius: 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
 }
 
 .dropdown-item{
@@ -210,8 +267,153 @@ input[type="search"]::placeholder{
     text-align: center;
 }
 
-.box{
+.box.intro, .box.friends, .box.post{
     background: white;
     border-radius: 3px;
     margin-bottom: 15px;
 }
+
+.form-inline button{
+    margin: 0.5rem 0;
+    padding: .375rem .75rem;
+    float: clear;
+    position: relative;
+    right: 15px;
+}
+
+.navbar-nav .nav-item a{
+    float: right;
+    margin: 0.5rem 0;
+    padding: .375rem .75rem;
+}
+
+.nav-item .nav-link:hover {
+    background: #3B5999;
+    border-radius: 10px;
+    color: white;   
+}
+
+.modal-body h6{
+    text-decoration: underline;
+}
+
+.modal-body .fas{
+    margin: 0 10px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.btn-outline-primary label {
+    margin-bottom: 0rem;
+}
+
+#bio-value{
+    margin: auto;
+    width: 350px;
+}
+
+.bio input[type="submit"], #bio-value{
+    display: block;
+    margin: auto;
+}
+
+#bio{
+    display: none;
+}
+
+.modal-input{
+    border: none;
+    outline: none;
+    display: block;
+    margin: 18px auto;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-input::placeholder {
+    text-align: center;
+}
+
+.modal-input:focus{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.modal-body input[type="submit"]{
+    display: block;
+    margin: 18px auto;
+
+}
+
+.box .event{
+    width: 500px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.event .post{
+    margin-bottom: 15px;
+    background: #ffffff;
+        border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.thing{
+    width: 450px;
+    margin: auto;
+}
+
+
+@media (max-width: 992px){
+    li.nav-item.active, li.nav-item.dropbdown{
+        position: relative;
+        top: 6px;
+    }
+
+    .dropdown-menu{
+        top: 70%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .navbar-dark .navbar-toggler, .navbar-brand{
+        position: relative;
+        bottom: 5px;
+        padding: 0.1rem 0.1rem;
+        border-color:transparent;
+        color: rgba(255,255,255,1);
+        outline: none;
+    }
+
+    div#navbarSupportedContent.show{
+        background: #4267B2;
+        z-index: 1;
+        position: relative;
+        bottom: 6px;
+        width: 100%;
+    }
+
+    input.form-control.mr-sm-2{
+        border-bottom: 1px solid white;
+    }
+
+    li.nav-item{
+        display: block;
+        margin: auto;
+    }
+
+    .dropdown-menu{
+        min-width: 0rem;
+        background-color: transparent;
+        background-clip: none;
+        border: none;
+    }
+}
+
