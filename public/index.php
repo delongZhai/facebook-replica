@@ -25,7 +25,7 @@
 
 <body>
     <!-- Form for signing in -->
-		<form action="home.php" method="POST" target="_blank">
+		<form action="signin.php" method="POST" target="_self">
 		<div class="login"> 
 			<span class="emailLogin">Email</span> 
 			<input type="email" name="user" >

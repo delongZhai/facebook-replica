@@ -16,7 +16,7 @@
             $num = mysqli_num_rows($inforun);
 
             while ($row = mysqli_fetch_array($inforun, MYSQLI_ASSOC)){ 
-                echo "<h1> Welcome ".$row['first_name']." " .$row['last_name']. " to your Facebook page. </h1>";
+                require_once('home.php');
             }
             exit();
         }
