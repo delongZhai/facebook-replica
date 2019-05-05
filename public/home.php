@@ -27,8 +27,8 @@
             <div class="navbar-collapse collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="form-inline my-2 my-lg-0" method="GET" action="search.php">
+                            <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
                             <button><i class="fas fa-search"></i></button>
                             <label for="submit"></label>
                         </form>
@@ -41,7 +41,7 @@
                         <div class="dropdown-menu profile-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Setting</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Logout</a>
+                            <button class="dropdown-item" href="#">Logout</button>
                         </div>
                     </li>
                 </ul>
@@ -78,10 +78,10 @@
                     <div class="bio-intro">
                         <i class="far fa-address-card"></i>
                         <p>Change Bio</p>
-                        <a href="#" class="adding-bio">Add Bio</a>
+                        <a class="adding-bio">Add Bio</a>
                     </div>
                     <div id="bio">
-                        <form action="userInfo.php" method="post">
+                        <form>
                             <textarea name="user_bio" id="bio-value" cols="300" rows="100"  maxlength="80" placeholder="Write Something Interesting about Yourself"></textarea>
                             <input class="btn-outline-primary" id="okay-bio" type="submit" value="Okay">
                         </form>
@@ -139,26 +139,24 @@
                             <form>
                                 <input class="modal-input" type="text" id="institution" placeholder="Institution">
                                 <input class="modal-input" type="text" id="degree" placeholder="Degree">
-                                <input type="submit" class="btn-outline-primary">
                             </form>
                         </div>
                         <div class="currentCity">
                             <h6><i class="fas fa-city"></i>Current City</h6>
                             <form>
                                 <input class="modal-input" type="text" id="inhabit" placeholder="Current City">
-                                <input type="submit" class="btn-outline-primary">
                             </form>
                         </div>
                         <div class="hometown">
                             <h6><i class="fas fa-search-location"></i>Hometown</h6>
                             <form>
                                 <input class="modal-input" type="text" id="hometown" placeholder="Hometown">
-                                <input type="submit" class="btn-outline-primary">
                             </form>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" value="SAVE" class="btn-primary">
                     </div>
                 </div>
             </div>
